@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="You have"
+        android:textSize="20dp" />
+
+    <at.grabner.circleprogress.CircleProgressView
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/circleView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        CircleProgressView:cpv_autoTextSize="true"
+        CircleProgressView:cpv_barColor="@color/colorPrimary"
+        CircleProgressView:cpv_barWidth="10dp"
+        CircleProgressView:cpv_innerContourSize="0dp"
+        CircleProgressView:cpv_maxValue="100"
+        CircleProgressView:cpv_outerContourSize="0dp"
+        CircleProgressView:cpv_rimColor="@color/colorAccent"
+        CircleProgressView:cpv_rimWidth="2dp"
+        CircleProgressView:cpv_spinColor="@color/colorPrimary"
+        CircleProgressView:cpv_textColor="@color/colorPrimaryDark"
+        CircleProgressView:cpv_textScale="1"
+        CircleProgressView:cpv_unitColor="@color/colorAccent"
+        CircleProgressView:cpv_unitPosition="right_top"
+        CircleProgressView:cpv_unitScale="1"
+        CircleProgressView:cpv_value="100"
+        android:layout_below="@id/first"/>
+
+
+
+    <TextView
+        android:id="@+id/second"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="until Period 1 starts"
+        android:textSize="20dp"
+        android:layout_below="@id/circleView"/>
+
+</RelativeLayout>
